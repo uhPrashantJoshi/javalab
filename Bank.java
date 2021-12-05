@@ -64,10 +64,12 @@ class Sav_Acct extends Account
 
         ch = sc.nextInt();
         double interest;
-        double interestrate = 10/100;
-        double numberperyear = 1;
 
+        //double interestrate = 10/100;
+        //double numberperyear = 1;=
         double  years = 4;
+        //can change later
+
         switch(ch)
 
         {
@@ -84,7 +86,7 @@ class Sav_Acct extends Account
 
                     amount = sc.nextDouble();
                     System.out.println("Amount after withdrawal of "+amount+" is "+(balance-amount));
-
+                    balance = balance - amount;
                     break;
 
             default: System.out.println("Wrong option"); return;
