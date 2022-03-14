@@ -6,7 +6,9 @@ abstract class shape{
        
 class triangle extends shape{ 
 	void getdata(double x,double y)
-        { a=x;b=y; }
+        { 
+		a=x;b=y; 
+	}
         void printarea()
         { 
          double area=0.5*a*b;
